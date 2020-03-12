@@ -1,0 +1,30 @@
+package work;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Prime {
+
+	public static void main(String[] args) throws IOException {
+
+		BufferedReader Prime= new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.print("Enter a number to check : ");
+
+		int Num=Integer.parseInt(Prime.readLine());
+
+		for (int i=2; i<=Num; i++) {
+			int m = Num%i;
+			if (m==0) {
+				System.out.println(" Number is not Prime"+Num);
+				break;
+			} else {
+
+				System.out.println(" Number is a Prime Number"+Num);
+				break;
+			}
+
+		}
+	}
+}
