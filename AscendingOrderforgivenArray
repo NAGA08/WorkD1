@@ -1,0 +1,45 @@
+package work;
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class AscendingOrder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//scanner for giving input array
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size of the array that is to be created::");
+		int size = sc.nextInt();
+
+		int[] myArray = new int[size];
+		System.out.println("Enter the elements of the array ::");
+
+		for (int i = 0; i < size; i++) 
+		{
+			myArray[i] = sc.nextInt();
+		}
+
+		for (int i = 0; i < size - 1; i++)
+		{
+			for (int j = i + 1; j < myArray.length; j++)
+			{
+				if (myArray[i] > myArray[j])
+				{
+					int temp = myArray[i];
+
+					myArray[i] = myArray[j];
+					myArray[j] = temp;
+
+				}
+
+			}
+
+		}
+
+		System.out.println(Arrays.toString(myArray));
+
+	}
+
+}
