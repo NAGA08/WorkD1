@@ -1,0 +1,15 @@
+package work;
+
+public class Hello2 {
+	
+	
+		static public void main(String[] args)
+		//we can also swap both public and static but we can't change other keywords
+
+		{
+
+			System.out.println("\"HELLO JAVA\"");
+
+		}
+
+	}
